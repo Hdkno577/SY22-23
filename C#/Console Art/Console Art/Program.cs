@@ -10,6 +10,14 @@ namespace Console_Art
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("HH    HH    KK      KK");
+            Console.WriteLine("HH    HH    KK    KK");
+            Console.WriteLine("HH    HH    KK  KK");
+            Console.WriteLine("HHHHHHHH    KKKK");
+            Console.WriteLine("HH    HH    KK  KK");
+            Console.WriteLine("HH    HH    KK    KK");
+            Console.WriteLine("HH    HH    KK      KK");
+            Console.ReadLine();
         }
     }
 }
