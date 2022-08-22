@@ -4,39 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Survey
+namespace ConsoleApp1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int x;
-            int y;
-            int z;
-            int correct = 0;
-            Console.WriteLine("What is 1 + 1?" + "\n a) 3" + "\n b) 5" + "\n c) 2" + "\n d) 1");
-            x = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Your answer was {x}. ");
-            Console.WriteLine("Correct answer is 2");
-
-            Console.WriteLine("\n What is the Square Root of 16?" +  "\n a) 4" + "\n b) 8" + "\n c) 3" + "\n d) 12");
-            y = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Your answer was {y}. ");
-            Console.WriteLine("Correct answer is 4");
-            
-            Console.WriteLine("\n What is 6^2?" + "\n 42" + "\n 36" + "\n 12" + "\n 24");
-            z = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Your anwser was {z}. ");
-            Console.WriteLine("Correct Answer is 4");
-
-            if (x == 2)
-            { correct++; }
-            if (y == 4)
-            { correct++; }
-            if (z == 36)
-            { correct++; }
-            Console.WriteLine($"You got {correct} answers correct");
+            Console.WriteLine("Please Answer With the Letter Coresponding to the Answer");
+            ShowQuestion("\nWhat is 1+1?", " a)1", " b)3", " c) 0", " d) 2", "d");
+            ShowQuestion("\nWhat is the square root of 16?", " a)4", " b)5", " c) 0", " d) 6", "a");
+            ShowQuestion("\nWhat is 6 squared?", " a)42", " b)36", " c) 45", " d) 6", "12");
             Console.ReadKey();
+
+            ;
+        }
+        public static void ShowQuestion(string question,
+                                        string answer1,
+                                        string answer2,
+                                        string answer3,
+                                        string answer4,
+                                        string correct)
+        {
+            Console.WriteLine(question);
+            Console.WriteLine(answer1);
+            Console.WriteLine(answer2);
+            Console.WriteLine(answer3);
+            Console.WriteLine(answer4);
+            string answer = Console.ReadLine();
+            if (answer.Equals(correct))
+                Console.WriteLine("You Got it Correct");
         }
     }
 }
+
