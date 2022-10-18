@@ -1,0 +1,11 @@
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\bin\Debug\Game 1.2.exe.config
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\bin\Debug\Game 1.2.exe
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\bin\Debug\Game 1.2.pdb
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\obj\Debug\Game 1.2.csproj.AssemblyReference.cache
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\obj\Debug\Game 1.2.csproj.SuggestedBindingRedirects.cache
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\obj\Debug\Game_1._2.Form1.resources
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\obj\Debug\Game_1._2.Properties.Resources.resources
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\obj\Debug\Game 1.2.csproj.GenerateResource.cache
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\obj\Debug\Game 1.2.csproj.CoreCompileInputs.cache
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\obj\Debug\Game 1.2.exe
+C:\Users\hdkno577\Documents\SY22-23\C#\Game 1.2\Game 1.2\obj\Debug\Game 1.2.pdb

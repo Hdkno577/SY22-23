@@ -22,7 +22,6 @@ namespace Game
         {
             objects.Add(s);
             s.setParent(this);
-
         }
         public bool isClear(PictureBox P, int X, int Y)
         {

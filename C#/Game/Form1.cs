@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +17,8 @@ namespace Game
         public Canvas c = null;
         Sprite p1;
         Chaser p2;
-        Ball b1;
+        Bullet b1;
+        Bullet b2;
 
         public Form1()
         {
@@ -25,10 +27,12 @@ namespace Game
             c = new Canvas(this);
             p1 = new Sprite(player);
             p2 = new Chaser(player2);
-            b1 = new Ball(Ballpicture, 5, 5);
+            b1 = new Bullet(Bulletpicture, 5, 5);
+            b2 = new Bullet(Bulletpicture2, 5, 5);
             c.Add(p1);
             c.Add(p2);
             c.Add(b1);
+            c.Add(b2);
         }
         
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -41,35 +45,35 @@ namespace Game
             }
 
 
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.A)
             {
                 p1.moveleft();
             }
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.D)
             {
                 p1.moveright();
             }
-            if (e.KeyCode == Keys.Up)
+            if (e.KeyCode == Keys.W)
             {
                 p1.moveup();
             }
-            if (e.KeyCode == Keys.Down)
+            if (e.KeyCode == Keys.S)
             {
                 p1.movedown();
             }
-            if (e.KeyCode == Keys.A)
+            if (e.KeyCode == Keys.Left)
             {
                 p2.moveleft();
             }
-            if (e.KeyCode == Keys.D)
+            if (e.KeyCode == Keys.Right)
             {
                 p2.moveright();
             }
-            if (e.KeyCode == Keys.W)
+            if (e.KeyCode == Keys.Up)
             {
                 p2.moveup();
             }
-            if (e.KeyCode == Keys.S)
+            if (e.KeyCode == Keys.Down)
             {
                 p2.movedown();
             }
@@ -77,25 +81,24 @@ namespace Game
             {
                 PictureBox p = new PictureBox();
                 p.Location = player.Location;
-                p.Width = Ballpicture.Width;
-                p.Size = Ballpicture.Size;
-                p.BackColor = Ballpicture.BackColor;
+                p.Width = Bulletpicture.Width;
+                p.Size = Bulletpicture.Size;
+                p.BackColor = Bulletpicture.BackColor;
                 p.Top = player.Location.X;
                 p.Left = player.Location.Y;
-                p.Width = Ballpicture.Width;
-                p.Height = Ballpicture.Height;
-                p.BackColor = Ballpicture.BackColor;
-                p.SizeMode = Ballpicture.SizeMode;
-                if (Ballpicture.Image != null)
-                    p.Image = Ballpicture.Image;
-                p.Name = Ballpicture.Name;
+                p.Width = Bulletpicture.Width;
+                p.Height = Bulletpicture.Height;
+                p.BackColor = Bulletpicture.BackColor;
+                p.SizeMode = Bulletpicture.SizeMode;
+                if (Bulletpicture.Image != null)
+                    p.Image = Bulletpicture.Image;
+                p.Name = Bulletpicture.Name;
                 p.Visible = true;
                 Controls.Add(p);
                 c.Add(new Sprite(p));
             }
 
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (progressBar1.Value < progressBar1.Maximum)
@@ -103,8 +106,6 @@ namespace Game
             // let the canvas do all the work
             c.tick();
         }
-
-
     }
 
 }

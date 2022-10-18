@@ -1,0 +1,8 @@
+C:\Users\hdkno577\Documents\SY22-23\C#\ForLoops\ForLoops\bin\Debug\ForLoops.exe.config
+C:\Users\hdkno577\Documents\SY22-23\C#\ForLoops\ForLoops\bin\Debug\ForLoops.exe
+C:\Users\hdkno577\Documents\SY22-23\C#\ForLoops\ForLoops\bin\Debug\ForLoops.pdb
+C:\Users\hdkno577\Documents\SY22-23\C#\ForLoops\ForLoops\obj\Debug\ForLoops.csproj.AssemblyReference.cache
+C:\Users\hdkno577\Documents\SY22-23\C#\ForLoops\ForLoops\obj\Debug\ForLoops.csproj.SuggestedBindingRedirects.cache
+C:\Users\hdkno577\Documents\SY22-23\C#\ForLoops\ForLoops\obj\Debug\ForLoops.csproj.CoreCompileInputs.cache
+C:\Users\hdkno577\Documents\SY22-23\C#\ForLoops\ForLoops\obj\Debug\ForLoops.exe
+C:\Users\hdkno577\Documents\SY22-23\C#\ForLoops\ForLoops\obj\Debug\ForLoops.pdb
